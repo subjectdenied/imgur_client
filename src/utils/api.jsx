@@ -5,7 +5,7 @@ var apiKey = 'a03f4193df0e9ae';
 module.exports = window.api = {
   get: function(url) {
     return fetch(rootUrl + url, {
-      header: {
+      headers: {
         'Authorization': 'Client-ID ' + apiKey
       }
     })
